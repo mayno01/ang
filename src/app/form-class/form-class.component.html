@@ -1,0 +1,15 @@
+<form #classForm="ngForm" (ngSubmit)="addclass(classForm.value)" class="needs-validation university-form" novalidate>
+    <h3>Add a New class</h3>
+    <div class="form-group">
+        <label for="nomClass">class Name:</label>
+        <input type="text" id="nomClass" name="nomClass" ngModel required class="form-control">
+   
+    </div>
+    <div class="form-group">
+        <label for="filiere"> filiere:</label>
+        <input type="text" id="filiere" name="filiere" ngModel required class="form-control">
+   
+    </div>
+   
+    <button type="submit" class="button-17">Add class</button>
+</form>

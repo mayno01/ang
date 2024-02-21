@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Update Class</h2>
+    <form (ngSubmit)="updateClass()" #updateForm="ngForm" class="needs-validation university-form" novalidate>
+      <div class="form-group">
+        <label for="nomClass">Class Name:</label>
+        <input type="text" class="form-control" id="nomClass" name="nomClass" [(ngModel)]="classs.nomClass" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="fellier">class fellier:</label>
+        <input type="text" class="form-control" id="fellier" name="fellier" [(ngModel)]="classs.filiere" required>
+      </div>
+   
+      <!-- Add other form fields as needed -->
+  
+      <button type="submit" class="button-17">Update</button>
+    </form>
+  </div>
+  

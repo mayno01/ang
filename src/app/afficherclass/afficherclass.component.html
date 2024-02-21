@@ -1,0 +1,26 @@
+<h2>List of Classes <small> by iheb </small></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Filiere</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let classItem of classes">
+      <td>{{ classItem.idclass }}</td>
+      <td>{{ classItem.nomClass }}</td>
+      <td>{{ classItem.filiere }}</td>
+      <td>
+        <button (click)="deleteClass(classItem.idclass)" style="margin-right: 15px;">Delete</button>
+        <button (click)="updateClass(classItem)" style="margin-right: 15px;">Update</button>
+        <button (click)="showDetails(classItem)" style="margin-right: 15px;">Details</button>
+      </td>
+    </tr>
+  </tbody>
+
+</table>
+  <app-class-details *ngIf="selectedClass" [class]="selectedClass"></app-class-details>
